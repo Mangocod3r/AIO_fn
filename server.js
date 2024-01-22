@@ -158,7 +158,7 @@ app.delete('/deletemovie/:id', async (req, res) => {
   }
 });
 
-//  Start the server
+//  Start the Server 
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
