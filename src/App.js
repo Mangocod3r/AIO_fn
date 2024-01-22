@@ -27,7 +27,7 @@ return (
       <Route path="/register" element={<Register />} />
       <Route path="/" element={<Login />} />
 
-      {/* <Route path="/home" element={<Home />} /> */}
+      
       <Route path="/home" element={<Protected><Home/></Protected>} />
 
       <Route path="/food" element={<Protected><Food/></Protected>} />

@@ -114,7 +114,7 @@ app.post('/register', async (req, res) => {
   }
 });
 
-// Login Route
+// Login Route 
 app.post('/login', async (req, res) => {
   const { name, password } = req.body;
   
@@ -158,7 +158,7 @@ app.delete('/deletemovie/:id', async (req, res) => {
   }
 });
 
-// Start the server
+//  Start the server
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
