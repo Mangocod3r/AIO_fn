@@ -21,7 +21,7 @@ const Login = () => {
     }
 
     try {
-      const response = await axios.post(`${process.env.BACKEND}/login`, {
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND}/login`, {
         name,
         password,
       });
