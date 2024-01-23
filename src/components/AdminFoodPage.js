@@ -24,7 +24,7 @@ function AdminFoodPage() {
     console.log(id);
 
     axios
-      .delete(`http://localhost:8000/deletefood/${id}`)
+      .delete(`${process.env.BACKEND}/deletefood/${id}`)
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
 
