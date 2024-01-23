@@ -30,7 +30,7 @@ function FoodAdmin() {
     e.preventDefault();
   
     axios
-      .post('http://localhost:8000/postfood', post)
+      .post(`${process.env.BACKEND}/postfood`, post)
       .then((res) => {
         console.log(res);
       })
