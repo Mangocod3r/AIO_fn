@@ -14,7 +14,7 @@ function AdminMoviePage() {
   ]);
 
   useEffect(() => {
-    fetch('http://localhost:8000/getmovie')
+    fetch(`${process.env.BACKEND}/getmovie`)
       .then((res) => res.json())
       .then((jsonRes) => setCats(jsonRes));
   }, []);
