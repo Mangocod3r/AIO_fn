@@ -30,7 +30,7 @@ function MovieAdmin() {
     e.preventDefault();
 
     axios
-      .post(`${process.env.BACKEND}/postmovie`, post)
+      .post(`${process.env.REACT_APP_BACKEND}/postmovie`, post)
       .then((res) => console.log(res))
       .catch((err) => {
         alert("Movie insertion Failure")
