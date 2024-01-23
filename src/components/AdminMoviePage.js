@@ -24,7 +24,7 @@ function AdminMoviePage() {
     console.log(id);
 
     axios
-      .delete(`http://localhost:8000/deletemovie/${id}`)
+      .delete(`${process.env.BACKEND}/deletemovie/${id}`)
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
 
