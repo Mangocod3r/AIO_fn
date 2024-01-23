@@ -14,7 +14,7 @@ function AdminMoviePage() {
   ]);
 
   useEffect(() => {
-    fetch(`${process.env.BACKEND}/getmovie`)
+    fetch(`${process.env.REACT_APP_BACKEND}/getmovie`)
       .then((res) => res.json())
       .then((jsonRes) => setCats(jsonRes));
 
@@ -29,7 +29,7 @@ function AdminMoviePage() {
     console.log(id);
 
     axios
-      .delete(`${process.env.BACKEND}/deletemovie/${id}`)
+      .delete(`${process.env.REACT_APP_BACKEND}/deletemovie/${id}`)
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
 
