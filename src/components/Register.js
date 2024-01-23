@@ -17,7 +17,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/register', {
+      const response = await axios.post(`${process.env.BACKEND}/register`, {
         name,
         password,
         email,
