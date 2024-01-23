@@ -12,7 +12,7 @@ function Food() {
   ]);
 
   useEffect(() => {
-    fetch('http://localhost:8000/getfood')
+    fetch(`${process.env.BACKEND}/getfood`)
       .then((res) => res.json())
       .then((jsonRes) => setCats(jsonRes));
   }, []);
