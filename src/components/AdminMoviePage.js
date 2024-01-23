@@ -17,7 +17,12 @@ function AdminMoviePage() {
     fetch(`${process.env.BACKEND}/getmovie`)
       .then((res) => res.json())
       .then((jsonRes) => setCats(jsonRes));
+
+      console.log(cats);
+
   }, []);
+
+  console.log(cats);
 
   const deletePost = (id) => {
     console.log("delete------movie-------qwerty");
